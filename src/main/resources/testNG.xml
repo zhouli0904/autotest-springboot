@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="springbootDemo接口自动化测试用例">
+    <test name="商品管理">
+        <classes>
+            <class name="com.ddmc.autotestspringboot.testcase.goods.TestCreateGoods"/>
+        </classes>
+    </test>
+    <test name="活动管理">
+        <classes>
+            <class name="com.ddmc.autotestspringboot.testcase.activity.TestCreateDiscountActivity"/>
+            <class name="com.ddmc.autotestspringboot.testcase.activity.TestCreatePostageActivity"/>
+            <class name="com.ddmc.autotestspringboot.testcase.activity.TestCreateCoupon"/>
+        </classes>
+    </test>
+    <test name="商详页">
+        <classes>
+            <class name="com.ddmc.autotestspringboot.testcase.goodsDetailPage.TestShowActivityTags"/>
+            <class name="com.ddmc.autotestspringboot.testcase.goodsDetailPage.TestReceiveCoupon"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.ddmc.autotestspringboot.report.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+
+</suite>
